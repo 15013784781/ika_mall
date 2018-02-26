@@ -1,0 +1,42 @@
+#所有生成的class文件不会被推送到仓库中
+*.class
+
+#package file这里是包文件
+*.war
+*.ear
+# *.jar 为什么没有进行配置那?后续支付宝提供的jar包，要提交到仓库里.
+# 支付宝的jar包,在maven仓库中是没有,
+# 解决的办法一：不进行忽略jar 包的方式
+# 解决的办法二：可以通过精准的正则表达式添加*.jar的方式
+
+#kdiff3工具文件进行忽略 ifnore
+*.orig
+
+#maven ignore maven的文件进行忽略
+target/
+
+#eclipse ignore
+.settings/
+.project
+.classpath
+
+#idea ignore
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+
+#temp file 临时文件
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+#systeml ignore
+.DS_Store
+Thumbs.db
+
+
+
